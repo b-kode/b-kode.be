@@ -1882,7 +1882,7 @@ input, select, textarea {
 
 		@media screen and (min-width: 981px) {
 
-			.feature-list > .row > :nth-child(-n + 3) > section {
+			.feature-list > .row > :nth-child(-n + 2) > section {
 				border-top: 0;
 				padding-top: 0;
 			}
