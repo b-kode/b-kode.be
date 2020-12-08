@@ -2140,8 +2140,8 @@ input, select, textarea {
 			font-weight: 900;
 			text-transform: uppercase;
 			color: #fff;
-			font-size: 7em;
-			letter-spacing: 0.2em;
+			font-size: 5em;
+			letter-spacing: 0.25em;
 		}
 
 		#logo p {
