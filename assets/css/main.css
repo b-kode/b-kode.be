@@ -1889,6 +1889,14 @@ input, select, textarea {
 
 		}
 
+		.feature-list h2 {
+			color: #484d55 !important;
+			margin: -0.35em 0 0.75em 0;
+			font-size: 1.35em;
+			font-weight: 500;
+			letter-spacing: 0.02em;
+		}
+
 		.feature-list h3 {
 			color: #e97770 !important;
 			margin: -0.35em 0 0.75em 0;
