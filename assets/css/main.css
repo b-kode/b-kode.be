@@ -2107,7 +2107,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		position: relative;
-		height: 24em;
+		height: 27em;
 		background: url("../../images/banner.jpg") center center;
 		background-size: cover;
 		padding: 0;
