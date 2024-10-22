@@ -29,6 +29,7 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
 
+
 body {
 	line-height: 1;
 }
@@ -1634,6 +1635,15 @@ input, select, textarea {
   		width: 75px;
   		height: 75px;
 		}
+
+		.circular-image {
+          width: 20%; /* Adjust the size as needed */
+          height: auto;
+          aspect-ratio: 1/1; /* Ensures the image is a perfect square */
+          border-radius: 50%; /* Creates the circular effect */
+          object-fit: cover; /* Ensures the image fills the container */
+          overflow: hidden; /* Hides any overflow outside the circle */
+        }
 
 /* Button */
 
