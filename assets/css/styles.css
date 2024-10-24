@@ -56,7 +56,12 @@
     right: 5px;
 }
 
-/* Show arrows when hovering over the banner */
+/* Show arrows only when hovering over the banner */
 .scroll-banner-wrapper:hover .arrow {
-    display: block;
+    display: block; /* Show arrows when hovering */
+}
+
+/* Hide arrows when not hovering */
+.scroll-banner-wrapper:not(:hover) .arrow {
+    display: none; /* Ensure both arrows are hidden when not hovering */
 }
