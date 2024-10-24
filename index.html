@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="icon" href="images/kode_favicon.png">
 
 		<!-- social sharing https://stackoverflow.com/questions/19632323/default-website-image-for-social-sharing -->
@@ -483,7 +484,7 @@
 						</div>
 
 						<!-- Global affiliates -->
-					</br></br>
+						</br></br>
 						<div class="row aln-center">
 							<div class="col-3 col-12-medium">
 								<section class="highlight">
@@ -536,6 +537,64 @@
 											</h4>
 								</section>
 							</div>
+					</div>
+
+						<!-- Partners section -->
+						</br></br></br>
+						<div class="feature-list">
+
+							<center>B-Kode continues to grow its collaborative relationships and partnerships
+								to enhance its offerings, expand its reach, and provide additional value to its customers or clients.
+							</center>
+
+							<!-- Scrollable banner container -->
+							<!-- Scrollable banner container with arrows -->
+							<div class="scroll-banner-wrapper">
+								<div class="scroll-banner" id="scrollBanner">
+									<div class="scroll-banner-content">
+										<a href="https://www.weo-water.com/" target="_blank">
+											<img src="images/weo-logo.png" alt="WEO" class="logo-image" />
+										</a>
+										<a href="https://alluvium.com.au/" target="_blank">
+											<img src="images/Alluvium.png" alt="Alluvium" class="logo-image" />
+										</a>
+										<a href="https://www.adpc.net" target="_blank">
+											<img src="images/adpc.png" alt="Asian Disaster Preparedness Center" class="logo-image" />
+										</a>
+										<a href="https://rss-hydro.lu/" target="_blank">
+											<img src="images/rss_hydro.jpg" alt="RSS Hydro" class="logo-image" />
+										</a>
+										<a href="https://anteagroup.be/" target="_blank">
+											<img src="images/Anteagroup.png" alt="Antea Group" class="logo-image" />
+										</a>
+										<a href="https://www.tei.or.th/en/" target="_blank">
+											<img src="images/TEI.png" alt="Thailand Environment Institute" class="logo-image" />
+										</a>
+										<a href="https://people.ucd.ie/gerald.mills" target="_blank">
+											<img src="images/UCD.jpg" alt="University College Dublin" class="logo-image" />
+										</a>
+										<a href="https://www.maynoothuniversity.ie/faculty-social-sciences/our-people/rowan-fealy" target="_blank">
+											<img src="images/MaynoothUni.png" alt="Maynooth University" class="logo-image" />
+										</a>
+										<a href="https://www.arcadis.com/nl-nl/knowledge-hub/perspectives/europe/netherlands/over-morgen" target="_blank">
+											<img src="images/arcadis_overmorgen.jpg" alt="Overmorgen / Arcadis" class="logo-image" />
+										</a>
+										<a href="https://endeavours.eu/" target="_blank">
+											<img src="images/endeavour.png" alt="NDVR" class="logo-image" />
+										</a>
+									</div>
+								</div>
+
+								<!-- Left and right arrows -->
+								<div class="arrow left-arrow" onclick="scrollLeftContent()">
+									&#10094; <!-- Left arrow symbol -->
+								</div>
+								<div class="arrow right-arrow" onclick="scrollRightContent()">
+									&#10095; <!-- Right arrow symbol -->
+								</div>
+
+						</div>
+							<!-- Add more partner logos as needed -->
 					</div>
 				</section>
 
@@ -599,35 +658,66 @@
 
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			<script src="https://kit.fontawesome.com/bdcf1cb699.js" crossorigin="anonymous"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.dropotron.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+		<script src="https://kit.fontawesome.com/bdcf1cb699.js" crossorigin="anonymous"></script>
 
-			<!-- Info: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/-->
-			<script>
-			/*Scroll to top when arrow up clicked BEGIN*/
-			$(window).scroll(function() {
-			    var height = $(window).scrollTop();
-			    if (height > 100) {
-			        $('#back2Top').fadeIn();
-			    } else {
-			        $('#back2Top').fadeOut();
-			    }
+		<!-- Info: https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/-->
+		<script>
+		/*Scroll to top when arrow up clicked BEGIN*/
+		$(window).scroll(function() {
+			var height = $(window).scrollTop();
+			if (height > 100) {
+				$('#back2Top').fadeIn();
+			} else {
+				$('#back2Top').fadeOut();
+			}
+		});
+		$(document).ready(function() {
+			$("#back2Top").click(function(event) {
+				event.preventDefault();
+				$("html, body").animate({ scrollTop: 0 }, "medium");
+				return false;
 			});
-			$(document).ready(function() {
-			    $("#back2Top").click(function(event) {
-			        event.preventDefault();
-			        $("html, body").animate({ scrollTop: 0 }, "medium");
-			        return false;
-			    });
 
+		});
+		 /*Scroll to top when arrow up clicked END*/
+		</script>
+
+		<!-- JavaScript for scroll functionality -->
+		<script>
+			const scrollBanner = document.getElementById('scrollBanner'); // Get scrollable banner
+
+			function scrollLeftContent() {
+				// Scroll 300px left
+				scrollBanner.scrollBy({
+					left: -300,
+					behavior: 'smooth'
+				});
+			}
+
+			function scrollRightContent() {
+				// Scroll 300px right
+				scrollBanner.scrollBy({
+					left: 300,
+					behavior: 'smooth'
+				});
+			}
+
+			// Optional: Add boundary check to disable the left arrow if at the beginning
+			scrollBanner.addEventListener('scroll', function () {
+				const leftArrow = document.querySelector('.left-arrow');
+				if (scrollBanner.scrollLeft === 0) {
+					leftArrow.style.display = 'none'; // Hide the left arrow if at the beginning
+				} else {
+					leftArrow.style.display = 'block'; // Show the left arrow if not at the beginning
+				}
 			});
-			 /*Scroll to top when arrow up clicked END*/
-			</script>
+		</script>
 
 
 	</body>
