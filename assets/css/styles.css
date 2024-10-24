@@ -1,64 +1,62 @@
-<style>
-    .scroll-banner-wrapper {
-        position: relative;
-        width: 100%;
-        overflow: hidden; /* Hide default scrollbar */
-    }
+.scroll-banner-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Hide default scrollbar */
+}
 
-    .scroll-banner {
-        width: 100%;
-        overflow-x: scroll; /* Allow horizontal scrolling */
-        white-space: nowrap;
-        margin-top: 20px;
-        scroll-behavior: smooth; /* Smooth scroll */
-    }
+.scroll-banner {
+    width: 100%;
+    overflow-x: scroll; /* Allow horizontal scrolling */
+    white-space: nowrap;
+    margin-top: 20px;
+    scroll-behavior: smooth; /* Smooth scroll */
+}
 
-    .scroll-banner-content {
-        display: flex;
-        align-items: center;
-        gap: 15px; /* Space between logos */
-    }
+.scroll-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between logos */
+}
 
-    .logo-image {
-        height: 80px;
-        width: auto;
-        border-radius: 20px;
-    }
+.logo-image {
+    height: 80px;
+    width: auto;
+    border-radius: 20px;
+}
 
-    .scroll-banner::-webkit-scrollbar {
-        display: none; /* Hide scrollbar in WebKit browsers */
-    }
+.scroll-banner::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in WebKit browsers */
+}
 
-    /* Hide scrollbar for all browsers */
-    .scroll-banner {
-        -ms-overflow-style: none; /* Internet Explorer 10+ */
-        scrollbar-width: none; /* Firefox */
-    }
+/* Hide scrollbar for all browsers */
+.scroll-banner {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
 
-    .arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-0%);
-        font-size: 2em; /* Reduced size */
-        padding: 5px;
-        background-color: rgba(0, 0, 0, 0.3);
-        color: white;
-        cursor: pointer;
-        display: block; /* Initially visible */
-        z-index: 10;
-        border-radius: 50%; /* Make the arrows round */
-    }
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-0%);
+    font-size: 2em;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    display: none; /* Initially hidden */
+    z-index: 10;
+    border-radius: 50%; /* Make the arrows round */
+}
 
-    .left-arrow {
-        left: 10px;
-    }
+.left-arrow {
+    left: 10px;
+}
 
-    .right-arrow {
-        right: 10px;
-    }
+.right-arrow {
+    right: 10px;
+}
 
-    /* Show arrows when hovering over the banner */
-    .scroll-banner-wrapper:hover .arrow {
-        display: block;
-    }
-</style>
+/* Show arrows when hovering over the banner */
+.scroll-banner-wrapper:hover .arrow {
+    display: block;
+}
