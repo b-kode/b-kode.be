@@ -1,1 +1,9 @@
 .idea/
+
+# Other files to ignore
+images/BartPannemans.jpg
+images/JonasBlancke.jpg
+images/MinorityReportBackground.png
+images/*.xcf
+
+docs/Vacancy_CARMINE.pdf
