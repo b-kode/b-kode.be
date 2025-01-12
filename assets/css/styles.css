@@ -1,3 +1,13 @@
+.fa-bluesky {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-image: url('images/bluesky_logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .scroll-banner-wrapper {
     position: relative;
     width: 100%;
